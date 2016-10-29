@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imagen_producto"
+            android:layout_width="match_parent"
+            android:layout_height="124dp"
+            android:background="@drawable/ic_action_name"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_alerta"
+            android:layout_alignEnd="@+id/imagen_producto"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:layout_alignRight="@+id/imagen_producto" />
+        <TextView
+            android:id="@+id/precio_producto"
+            android:background="@color/boton"
+            android:textColor="@color/fondoEdit"
+            android:layout_width="wrap_content"
+            android:text="Bs 12.5"
+            android:layout_height="40dp"
+            android:layout_alignEnd="@+id/imagen_producto"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:layout_alignBottom="@+id/imagen_producto" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cafe Expres"
+        android:id="@+id/nombre_producto" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right">
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/btn_menos"
+            app:srcCompat="@drawable/ic_menos"
+            app:backgroundTint="@color/botonmenos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="16dp" />
+        <TextView
+            android:id="@+id/cantidad_producto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="32dp"
+            android:text="0"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/btn_mas"
+            app:srcCompat="@drawable/ic_mas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="16dp"
+            android:backgroundTint="@color/boton"/>
+    </LinearLayout>
+</LinearLayout>
